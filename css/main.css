@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  line-height: 1.65;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  background-color: #3dbeff;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__text {
+  text-align: center;
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  margin-top: 4rem;
+}
+
+.header__arrow {
+  display: block;
+  margin-top: 7rem;
+}
+
+.header__arrow img {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 4.5rem;
+  color: white;
+}
+
+.nav__menu a:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: white;
+  color: #19536b;
+  font-family: "Fraunces", serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: #70cfff;
+  color: white;
+}
+
+.link {
+  position: relative;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  height: 1.2rem;
+  width: 100%;
+  left: 0;
+  bottom: 3px;
+  background-color: yellow;
+  border-radius: 1rem;
+  z-index: -1;
+  opacity: 0;
+  transition: all .24s ease-in-out;
+}
+
+.link:hover::before {
+  opacity: 1;
+  transform: scaleX(1.2);
+}
+
+.grid {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 600px);
+  color: #23303e;
+}
+
+.grid__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20%;
+}
+
+.grid__text-title {
+  font-family: "Fraunces", serif;
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.grid__text-text {
+  color: #a7abae;
+  padding: 3rem 0;
+}
+
+.grid__image img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */

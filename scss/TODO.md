@@ -1,0 +1,1 @@
+change header background size to cover @media max-width 1440px

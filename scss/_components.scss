@@ -1,0 +1,44 @@
+.cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: $white;
+    color: $dark-blue;
+    font-family: $font-title;
+    font-size: 1.4rem;
+    font-weight: $x-bold;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: $bg-cta-hover;
+        color: $white;
+    }
+}
+
+.link {
+        position: relative;
+        font-family: $font-title;
+        text-transform: uppercase;
+        font-weight: $x-bold;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 1.2rem;
+            width: 100%;
+            left: 0;
+            bottom: 3px; 
+            background-color: yellow;
+            border-radius: 1rem;
+            z-index: -1; 
+            
+            opacity: 0;   
+            transition: all .24s ease-in-out;            
+        }
+
+        &:hover::before {
+           opacity: 1;  
+           transform: scaleX(1.2);         
+        }
+    }
