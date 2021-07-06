@@ -34,4 +34,31 @@
         }
     }
 
+    &__text-image {
+        position: relative;
+
+      
+
+        &-image {
+            position: absolute;
+            display: block;
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        &-text {
+            height: 100%;
+            width: 50%;
+           
+            margin: auto;
+            text-align: center;
+           
+
+        }
+     
+
+    }
+
 }

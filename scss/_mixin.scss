@@ -1,0 +1,13 @@
+@mixin link-effect($color) {
+    content: "";
+    position: absolute;
+    height: 1.2rem;
+    width: 100%;
+    left: 0;
+    bottom: 3px; 
+    background-color: $color;
+    border-radius: 1rem;
+    z-index: -1;            
+    opacity: 0;   
+    transition: all .24s ease-in-out;     
+}

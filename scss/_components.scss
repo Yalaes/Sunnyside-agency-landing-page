@@ -23,18 +23,11 @@
         font-weight: $x-bold;
 
         &::before{
-            content: "";
-            position: absolute;
-            height: 1.2rem;
-            width: 100%;
-            left: 0;
-            bottom: 3px; 
-            background-color: yellow;
-            border-radius: 1rem;
-            z-index: -1; 
-            
-            opacity: 0;   
-            transition: all .24s ease-in-out;            
+                @include link-effect(salmon);  
+        }
+
+        &.link--yellow::before {
+            @include link-effect(yellow)
         }
 
         &:hover::before {
